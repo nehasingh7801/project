@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Sign Up kyc Details</title>
+
+  <link rel="stylesheet" href="../static/styles/style.css">
+  <link rel="stylesheet" href="../static/styles/user_sign.css">
+
+    
+{% endblock head %}
+
+{% block body %}
+
+
+  
+
+  <section class="p-5 text-center">
+    <div class="container">
+      <div class="d">
+        <h3>WHAT IS KYC?</h3>
+        <p class="lead">
+          KYC means Know Your Customer and sometimes Know Your Client. <br>
+          KYC or KYC check is the mandatory process of identifying and verifying the client's identity when
+          opening an account.
+          It validates your identity, address and signature among other things and is a prerequisite for
+          investment in mutual funds and even opening of a bank account.
+          Without valid documents for KYC the financial institution in question, may refuse you the opportunity to
+          open a bank account or grant permission for investment in any mutual fund schemes.
+        </p>
+      </div>
+    </div>
+  </section> 
+
+  <section class=" text-center">
+    <div class="container">
+      <div class="d">
+        <h4><b>Get started</b></h3>
+       
+      
+      </div>
+    </div>
+  </section> 
+
+
+
+
+
+  <div class="body">
+    <div class="form">
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <label for="f-name" class="Heading">FIRST NAME</label><br>
+        <input type="text" id="f-name" name="f-name" class="ip-field" placeholder="First Name"><br>
+
+        <label for="l-name" class="Heading">Last name</label><br>
+        <input type="text" id="l-name" name="l-name" class="ip-field" placeholder="Last Name"><br>
+
+        <label for="pan-card-number" class="Heading">Pan card Number</label><br>
+        <input type="text" id="pan-card-number" name="pan-card-number" class="ip-field"
+          placeholder="Pan card number"><br>
+
+        <label for="aadhar-card-number" class="Heading">Aadhar card Number</label><br>
+        <input type="text" id="aadhar-card-number" name="aadhar-card-number" class="ip-field"
+          placeholder="Aadhar card number"><br>
+
+        <label for="mobile-number" class="Heading">Aadhar mobile Number</label><br>
+        <input type="text" id="mobile-number" name="mobile-number" class="ip-field"
+          placeholder="Mobile number"><br>
+        
+        <label for="password" class="Heading">Password</label><br>
+        <input type="text" id="password" name="password" class="ip-field"
+          placeholder="Password"><br>
+        
+
+        <label for="aadhar-card" class="Heading">Aadhar Card</label><br>
+        <input type="file" id="aadhar-card" name="aadhar-card" class="ip-field" placeholder="Aadhar card"><br>
+        <label for="pan-card" class="Heading">Pan Card</label><br>
+        <input type="file" id="pan-card" name="pan-card" class="ip-field" placeholder="pan card"><br>
+        <label for="adress-proof" class="Heading">Adress proof</label><br>
+        <input type="file" id="adress-proof" name="adress-proof" class="ip-field" placeholder="Adress proof"><br>
+        <label for="signature" class="Heading">Signature</label><br>
+        <input type="file" id="signature" name="signature" class="ip-field" placeholder="Signature"><br>
+        <label for="photograph" class="Heading">Photograph</label><br>
+        <input type="file" id="photograph" name="photograph" class="ip-field" placeholder="Photograph"><br>
+
+        <div>
+          <button type='submit' class="btn submit bg-dark my-3">Submit</button>
+          <button class="btn Back my-3">Back</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+        
+{% endblock body %}

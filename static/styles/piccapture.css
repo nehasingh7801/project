@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+}
+#pic-capture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#pic-capture h3
+{
+    font-style: Montserrat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.picture
+{
+    border-radius: 47px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.favi
+{
+    font-size: 2rem;
+    color:  #3FA3E3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px)
+{
+    .form
+    {
+        width: 80%;
+    }
+}

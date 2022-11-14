@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+#vid-stream
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#vid-stream h1
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.vid
+{
+    border-radius: 47px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.red
+{
+    background-color: #FF5555;
+    padding: 6px;
+    width: fit-content;
+    border-radius: 8px;
+}
+.icons
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    position: relative;
+    top: -60px;
+}
+.favi
+{
+    margin: auto;
+}
+.blue
+{
+    color: #3FA3E3;
+}
+.white
+{
+    color: #FFFFFF;
+
+}
+@media screen and (max-width: 800px)
+{
+    .form
+    {
+        width: 80%;
+    }
+}

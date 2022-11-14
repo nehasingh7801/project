@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head %}
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/vid_stream.css">
+    <title>vidstream</title>
+    <script src="https://kit.fontawesome.com/2fc7fc8f56.js" crossorigin="anonymous"></script>
+
+    {% endblock head %}
+
+    {% block body %}
+    
+
+    <section id="vid-stream">
+        <div>
+            <h1>VIDEO STREAMING</h1>
+            <img src="../images/vid_stream.png" alt="" class="vid">
+
+            <div class="icons">
+                <i class="fas fa-video favi blue"></i>
+                <span class="red"><i class="fas fa-phone-slash fa-rotate-90 favi white"></i></i></span>
+                <i class="fas fa-microphone favi blue"></i>
+            </div>
+        </div>
+    </section>
+    {% endblock body %}

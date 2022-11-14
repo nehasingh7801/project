@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+
+
+
+ACCESS_KEY_ID='AKIARUSHNASRH2RZPUME'
+ACCESS_SECRET_KEY='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'
+
+
+
+
+
+

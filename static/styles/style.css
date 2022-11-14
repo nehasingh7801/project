@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+
+.black{
+    background-color: black;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.para{
+    font-family: 'Montserrat';
+    font-size: 100%;
+   
+}
+ .btn
+{
+    box-shadow: 5px 5px 5px 1px rgba(59, 58, 58, 0.219);
+    top: 0%;
+    bottom: 0%;
+} 
+.p1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+.p2{
+    text-align: center;
+    color:  #928d8d;
+    font-size: 20px;
+}
+/* .buttons{
+    display: flex;
+    justify-content: space-around;
+} */
+.loginButton{
+    border-radius: 40px;
+    border-color: transparent;
+    background-color: #3FA3E3;
+    padding: 0.2rem 3rem;
+    color: #fff;
+    margin: 2rem;
+    box-shadow: 5px 5px 5px 1px rgba(59, 58, 58, 0.219);
+}
+.loginButton1{
+    background-color: #fff;
+    /* border-color: rgba(0, 0, 0, 0.363); */
+    color: #000;
+}
+ .bttn{
+    margin: 1rem 0 ;
+    padding: 0.2rem 1.5rem ;
+} */
+.arrow{
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 40px;
+} 
+.form{
+    background-color: #F0F0F0;
+    border-radius: 20px;
+}
+ .row1{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+} 
+ .image{
+    position: relative;
+    margin: 1rem 0;
+} 
+.image__img{
+    width: 440px;
+    height: 220px;
+} 
+
+ .project_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.699);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 40px;
+} 
+.project_overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.project_overlay--blur{
+    backdrop-filter: blur(10px);
+} 
+
+.project_overlay:hover{
+    opacity: 1;
+} 
+.project_overlay:hover > *{
+    transform: translateY(0px);
+} 
+.project_description{
+   /* padding: 0.8rem;  */
+   /* margin: auto; */
+    font-size: 20px;
+    font-weight: 700;
+}  
+
+@media screen and (max-width: 500px){
+    .body{
+        margin: 5rem 2rem;
+    }
+} 
+@media screen and (max-width: 800px){
+    .row1{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .form
+    {
+        width: 80%;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel=”stylesheet” integrity=”sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+     <h1>Hello World</h1>
+     <div class="video-wrap">
+         <video playinline autoplay id="video"></video>
+     </div>
+
+     <!--Trigger Web APi-->
+     <form action="" method="post" enctype="multipart/form-data">
+        <div class="controller">
+        <input type='submit' id="snap">
+    </div></form>
+
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="{{url_for('static', filename = 'index.js')}}"></script>
+</body>
+</html>
