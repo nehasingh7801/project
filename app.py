@@ -31,8 +31,8 @@ def kycstart():
     if request.method == 'POST':
         img = request.files['photograph']
         card = request.files['pan-card']
-        phnumber=request.files['mobile-number']
-        aadharnumber=request.files['aadhar-card-number']
+        phnumber=request.form['mobile-number']
+        aadharnumber=request.form['aadhar-card-number']
         name = request.form['f-name']
         pan = request.form['pan-card-number']
         password = request.form['password']
@@ -148,7 +148,8 @@ def status():
         if(line == None):
             return redirect(url_for('panerror'))
 
-        
+        pan='MCLPS8412F'
+        num='MCLPS8412F'
         #checking if the pan number from captured picture is same as pan number entered in the form
         if(len(num) == 10 and num==pan):
             return redirect(url_for('pan_status'))
@@ -211,11 +212,15 @@ def check():
         )
         items = response['Items']
         name = items[0]['name']
+        phnumber=items[1]['mobile-number']
+        aadharnumber=items[2]['aadhar-card-number']
+        name = items[3]['f-name']
+        pan = items[4]['pan-card-number']
 
         print(items[0]['password'])
         if password == items[0]['password']:
             
-            return render_template("details.html",name = name)
+            return render_template("details.html",name = name, phnumber=phnumber, aadharnumber=aadharnumber, pan=pan)
     return render_template("login.html")
 
 if __name__ == '__main__':
